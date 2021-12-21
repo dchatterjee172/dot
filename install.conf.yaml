@@ -1,6 +1,8 @@
-- clean: [
-    '~'
-]
+- clean:
+    ~/.config:
+      recursive: true
+    ~/:
+      recursive: false
 
 - link:
     ~/.gitconfig: gitconfig
