@@ -5,6 +5,8 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.tmux: tmux
+    ~/.tmux.conf: tmux.conf
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [~/.tmux/plugins/tpm/scripts/install_plugins.sh >/dev/null 2>&1, Installing tmux plugins]
