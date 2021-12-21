@@ -12,7 +12,14 @@
         create: true
         path: alacritty.yml
     ~/.bashrc: bashrc
+    ~/.config/nvim: nvim
 
 - shell:
+    - [git clean -d -x -f, Cleaning directory]
     - [git submodule update --init --recursive, Installing submodules]
     - [~/.tmux/plugins/tpm/scripts/install_plugins.sh >/dev/null 2>&1, Installing tmux plugins]
+    - 
+      command: nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+      description: Installing nvim plugins
+      stdout: true
+      stderr: true

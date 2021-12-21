@@ -1,0 +1,29 @@
+FROM ubuntu:focal
+RUN apt-get update \
+    && apt-get install -y software-properties-common
+RUN apt-add-repository ppa:neovim-ppa/unstable \
+    && apt-get update \
+    && apt-get install -y \
+        build-essential \
+        curl \
+        git \
+        neovim \
+        python3-dev \
+        python3-neovim \
+        python3-pip \
+        python3-venv
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+RUN cargo install cargo-quickinstall
+RUN cargo quickinstall \
+        bat \
+        fd-find \
+        git-delta \
+        ripgrep \
+        sd
+RUN pip3 install \
+        jedi-language-server
+RUN git clone https://github.com/dchatterjee172/dot.git /dot
+RUN mkdir ~/.config/ \
+    && ln -s /dot/nvim ~/.config/nvim
+RUN nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
