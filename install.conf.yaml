@@ -6,6 +6,9 @@
     ~/.gitconfig: gitconfig
     ~/.tmux: tmux
     ~/.tmux.conf: tmux.conf
+    ~/.config/alacritty/alacritty.yml:
+        create: true
+        path: alacritty.yml
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
