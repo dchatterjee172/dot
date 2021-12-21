@@ -4,6 +4,7 @@
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.tmux: tmux
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
