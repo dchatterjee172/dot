@@ -1,3 +1,4 @@
+local o = vim.opt
 require("nvim-treesitter.configs").setup({
 	ensure_installed = {
 		"bash",
@@ -12,3 +13,6 @@ require("nvim-treesitter.configs").setup({
 		enable = true,
 	},
 })
+
+o.foldmethod = "expr"
+o.foldexpr = "nvim_treesitter#foldexpr()"
