@@ -55,4 +55,8 @@ return require("packer").startup(function(use)
 			require("Comment").setup()
 		end,
 	})
+	use({
+		"Pocco81/AutoSave.nvim",
+		config = get_config("autosave"),
+	})
 end)
