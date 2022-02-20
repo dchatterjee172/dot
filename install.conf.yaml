@@ -12,6 +12,7 @@
         create: true
         path: alacritty.yml
     ~/.bashrc: bashrc
+    ~/.bash_profile: bash_profile
     ~/.config/nvim: nvim
 
 - shell:
