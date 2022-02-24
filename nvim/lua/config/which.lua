@@ -5,6 +5,7 @@ wk.register({
 	f = {
 		name = "file",
 		f = { "<cmd>Telescope find_files<cr>", "Find File" },
+		g = { "<cmd>Telescope live_grep<cr>", "Search By Text" },
 		r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
 		p = { "<cmd>NvimTreeToggle<cr>", "Toogle Tree" },
 		t = { "<cmd>NvimTreeFindFile<cr>", "Find in Tree" },
