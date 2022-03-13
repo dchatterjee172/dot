@@ -17,13 +17,14 @@ RUN apt-add-repository ppa:neovim-ppa/unstable \
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 RUN cargo install cargo-quickinstall
-RUN cargo quickinstall \
-        bat \
-        fd-find \
-        git-delta \
-        ripgrep \
-        sd
-RUN GOBIN=/usr/local/bin/ go install github.com/mattn/efm-langserver@latest
+RUN cargo quickinstall bat \
+    && cargo quickinstall fd-find \
+    && cargo quickinstall git-delta \
+    && cargo quickinstall ripgrep \
+    && cargo quickinstall sd \
+    && cargo quickinstall exa
+RUN GOBIN=/usr/local/bin/ go install github.com/mattn/efm-langserver@latest \
+    && GOBIN=/usr/local/bin/ go install golang.org/x/tools/gopls@latest
 RUN pip3 install \
         black \
         jedi-language-server \

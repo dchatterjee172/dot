@@ -3,6 +3,7 @@ require("nvim-treesitter.configs").setup({
 	ensure_installed = {
 		"bash",
 		"dockerfile",
+		"go",
 		"json",
 		"lua",
 		"python",
