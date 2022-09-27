@@ -17,8 +17,7 @@ PROMPT_COMMAND='history -a;history -n'
 
 if [ -f ~/.git-completion.bash ]; then . ~/.git-completion.bash; fi
 
-# MacPorts Installer addition on 2022-09-27_at_22:06:35: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
+GOBIN=$(go env GOPATH)/bin
+export PATH="/opt/local/bin:/opt/local/sbin:~/go/bin:$PATH"
 
 eval "$(starship init bash)"
