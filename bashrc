@@ -13,7 +13,12 @@ PROMPT_COMMAND='history -a;history -n'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+[ -f /opt/local/share/fzf/shell/key-bindings.bash ] && source /opt/local/share/fzf/shell/key-bindings.bash
+
 if [ -f ~/.git-completion.bash ]; then . ~/.git-completion.bash; fi
 
-source "$HOME/.cargo/env"
+# MacPorts Installer addition on 2022-09-27_at_22:06:35: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
 eval "$(starship init bash)"
