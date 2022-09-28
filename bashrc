@@ -17,7 +17,9 @@ PROMPT_COMMAND='history -a;history -n'
 
 if [ -f ~/.git-completion.bash ]; then . ~/.git-completion.bash; fi
 
-GOBIN=$(go env GOPATH)/bin
-export PATH="/opt/local/bin:/opt/local/sbin:~/go/bin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 eval "$(starship init bash)"
+
+# Created by `pipx` on 2022-09-28 04:59:30
+export PATH="$PATH:~/.local/bin"
