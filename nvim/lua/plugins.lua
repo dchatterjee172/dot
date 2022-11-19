@@ -59,4 +59,5 @@ return require("packer").startup(function(use)
 		"Pocco81/AutoSave.nvim",
 		config = get_config("autosave"),
 	})
+	use("gpanders/editorconfig.nvim")
 end)
