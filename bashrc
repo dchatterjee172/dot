@@ -22,4 +22,4 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 eval "$(starship init bash)"
 
 # Created by `pipx` on 2022-09-28 04:59:30
-export PATH="$PATH:~/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"

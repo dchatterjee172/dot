@@ -19,3 +19,4 @@ o.sidescrolloff = 4
 o.hlsearch = true
 o.ignorecase = true
 o.foldenable = false
+o.mouse=''
