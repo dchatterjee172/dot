@@ -14,6 +14,6 @@ wk.register({
 		name = "lsp",
 		d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Go to definition" },
 		r = { "<cmd>lua vim.lsp.buf.references()<cr>", "References" },
-		f = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
+		f = { "<cmd>lua vim.lsp.buf.format({async = true})<cr>", "Format" },
 	},
 }, { prefix = "<leader>", mode = "n", default_options })
