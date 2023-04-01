@@ -8,6 +8,10 @@ require("nvim-treesitter.configs").setup({
 		"lua",
 		"python",
 		"yaml",
+        "gitignore",
+        "gosum",
+        "gomod",
+        "git_rebase",
 	},
 	sync_install = true,
 	highlight = {
