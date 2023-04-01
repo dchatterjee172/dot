@@ -9,7 +9,11 @@ require("nvim-treesitter.configs").setup({
 		"python",
 		"yaml",
         "javascript",
-        "typescript"
+        "typescript",
+        "gitignore",
+        "gosum",
+        "gomod",
+        "git_rebase"
 	},
 	sync_install = true,
 	highlight = {
