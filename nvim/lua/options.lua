@@ -1,4 +1,5 @@
 local o = vim.opt
+
 local wo = vim.wo
 local fn = vim.fn
 
@@ -20,3 +21,7 @@ o.hlsearch = true
 o.ignorecase = true
 o.foldenable = false
 o.mouse=""
+
+vim.diagnostic.config({
+  severity_sort = true,
+})
