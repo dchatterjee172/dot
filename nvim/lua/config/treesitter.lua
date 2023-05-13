@@ -12,6 +12,8 @@ require("nvim-treesitter.configs").setup({
         "gosum",
         "gomod",
         "git_rebase",
+        "c",
+        "zig",
 	},
 	sync_install = true,
 	highlight = {

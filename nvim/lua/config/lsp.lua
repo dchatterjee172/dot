@@ -33,3 +33,6 @@ lspconfig.gopls.setup(coq.lsp_ensure_capabilities({
 	filetypes = { "go", "gomod" },
 	root_dir = lspconfig_util.root_pattern("go.work", "go.mod", ".git"),
 }))
+lspconfig.ccls.setup(coq.lsp_ensure_capabilities({
+    cmd = { "ccls-clang-10" }
+}))
