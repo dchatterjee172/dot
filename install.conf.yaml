@@ -8,9 +8,12 @@
     ~/.gitconfig: gitconfig
     ~/.tmux: tmux
     ~/.tmux.conf: tmux.conf
-    ~/.config/alacritty/alacritty.yml:
+    # ~/.config/alacritty/alacritty.yml:
+    #     create: true
+    #     path: alacritty.yml
+    ~/.config/alacritty/alacritty.toml:
         create: true
-        path: alacritty.yml
+        path: alacritty.toml
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
     ~/.config/nvim: nvim
