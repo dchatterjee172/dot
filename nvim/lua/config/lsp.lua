@@ -34,12 +34,7 @@ lspconfig.gopls.setup(coq.lsp_ensure_capabilities({
 	root_dir = lspconfig_util.root_pattern("go.work", "go.mod", ".git"),
 }))
 lspconfig.eslint.setup({
-  documentFormatting = false,
-  on_attach = function(client, bufnr)
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      buffer = bufnr,
-      command = "EslintFixAll",
-    })
-  end,
+  documentFormatting = true,
+  root_dir = lspconfig_util.root_pattern("package.json", ".git")
 })
 lspconfig.tsserver.setup(coq.lsp_ensure_capabilities({ documentFormatting = false }))
