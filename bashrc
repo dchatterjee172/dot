@@ -17,3 +17,6 @@ if [ -f ~/.git-completion.bash ]; then . ~/.git-completion.bash; fi
 
 source "$HOME/.cargo/env"
 eval "$(starship init bash)"
+
+# Created by `pipx` on 2023-12-30 04:54:27
+export PATH="$PATH:/Users/debajyotichatterjee/.local/bin"
