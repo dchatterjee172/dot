@@ -11,3 +11,4 @@ if [ -f '/Users/debajyotichatterjee/Downloads/google-cloud-sdk/completion.bash.i
 
 # Created by `pipx` on 2023-12-30 04:54:27
 export PATH="$PATH:/Users/debajyotichatterjee/.local/bin"
+export HOMEBREW_NO_AUTO_UPDATE=1
