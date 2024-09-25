@@ -1,4 +1,4 @@
-source ~/.bashrc
+source "$HOME/.bashrc"
 
 export TERM="xterm-256color"
 
@@ -7,8 +7,3 @@ if [ -f '/Users/debajyotichatterjee/Downloads/google-cloud-sdk/path.bash.inc' ];
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/debajyotichatterjee/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/debajyotichatterjee/Downloads/google-cloud-sdk/completion.bash.inc'; fi
-# export PATH="/usr/local/opt/node@18/bin:$PATH"
-
-# Created by `pipx` on 2023-12-30 04:54:27
-export PATH="$PATH:/Users/debajyotichatterjee/.local/bin"
-export HOMEBREW_NO_AUTO_UPDATE=1
