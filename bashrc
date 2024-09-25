@@ -4,6 +4,7 @@
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
+export PATH="/opt/homebrew/bin:$PATH"
 
 export HISTSIZE=1000000
 export HISTFILESIZE=1000000
@@ -20,7 +21,6 @@ eval "$(starship init bash)"
 
 export CLOUDSDK_PYTHON=python3.11
 
-export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/go/bin"
 export HOMEBREW_NO_AUTO_UPDATE=1
