@@ -20,6 +20,7 @@ eval "$(starship init bash)"
 
 export CLOUDSDK_PYTHON=python3.11
 
+export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/go/bin"
 export HOMEBREW_NO_AUTO_UPDATE=1
