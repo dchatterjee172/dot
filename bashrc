@@ -4,7 +4,6 @@
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
-export PATH="/opt/homebrew/bin:$PATH"
 
 export HISTSIZE=1000000
 export HISTFILESIZE=1000000

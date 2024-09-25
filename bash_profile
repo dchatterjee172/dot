@@ -1,3 +1,4 @@
+export PATH="/opt/homebrew/bin:$PATH"
 source "$HOME/.bashrc"
 
 export TERM="xterm-256color"
