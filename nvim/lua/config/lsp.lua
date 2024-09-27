@@ -37,4 +37,4 @@ lspconfig.eslint.setup({
   documentFormatting = true,
   root_dir = lspconfig_util.root_pattern("package.json", ".git")
 })
-lspconfig.tsserver.setup(coq.lsp_ensure_capabilities({ documentFormatting = false }))
+lspconfig.ts_ls.setup(coq.lsp_ensure_capabilities({ documentFormatting = false }))
